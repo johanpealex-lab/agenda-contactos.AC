@@ -1,0 +1,616 @@
+
+/* CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f5fc;
+    color: #343044;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: #7254a8;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULOS SECUNDARIOS */
+h2 {
+    color: #594080;
+    margin: 18px 0 12px;
+    font-size: 21px;
+}
+
+/* TEXTO DE BIENVENIDA */
+p {
+    margin-bottom: 10px;
+    color: #625d70;
+}
+
+/* ENLACES */
+a {
+    color: #805bb5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #57358d;
+    text-decoration: underline;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 22px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(80, 60, 120, 0.08);
+}
+
+th {
+    background: #e9e0f5;
+    color: #594080;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #eee9f5;
+    color: #494456;
+}
+
+tr:hover {
+    background: #faf8fd;
+}
+
+/* BOTONES */
+button,
+.btn {
+    display: inline-block;
+    padding: 10px 17px;
+    background: #9474c4;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+    background: #7957ac;
+    color: white;
+}
+
+/* BOTÓN ELIMINAR */
+.btn-danger {
+    background: #d97786;
+}
+
+.btn-danger:hover {
+    background: #bd596b;
+}
+
+/* CAMPOS DE FORMULARIO */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 17px;
+    border: 1px solid #d9cde9;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #9474c4;
+    box-shadow: 0 0 4px #cbb9e5;
+}
+
+label {
+    font-weight: bold;
+    color: #594080;
+}
+
+/* MENSAJES */
+.mensaje {
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 7px;
+    background: #e4f5e9;
+    color: #28643c;
+}
+
+.error {
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 7px;
+    background: #fce8eb;
+    color: #9d3448;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 650px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+/* =================================
+   NUEVO DISEÑO 
+================================= */
+
+body {
+    padding: 0;
+    background: #f7f5fc;
+    color: #454052;
+}
+
+/* Encabezado superior */
+.encabezado {
+    background: #e9e0f5;
+    padding: 20px 6%;
+    border-bottom: 1px solid #ded2ed;
+}
+
+.encabezado-contenido {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    color: #694b98;
+    font-size: 26px;
+}
+
+.btn-cerrar {
+    background: white;
+    color: #7957ac;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-cerrar:hover {
+    background: #f5effc;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 35px auto;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(80, 60, 120, 0.07);
+}
+
+/* Tarjeta de bienvenida */
+.bienvenida {
+    background: linear-gradient(120deg, #eee7f8, #f9f6fd);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bienvenida h2 {
+    font-size: 25px;
+    margin: 10px 0;
+    color: #594080;
+}
+
+.bienvenida p {
+    margin: 0;
+}
+
+.etiqueta {
+    color: #9474c4;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.icono-agenda {
+    font-size: 55px;
+}
+
+/* Título de contactos */
+.titulo-contactos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.titulo-contactos h2 {
+    margin: 0 0 8px;
+    color: #594080;
+}
+
+.titulo-contactos p {
+    margin: 0;
+    color: #777184;
+}
+
+/* Botón agregar */
+.btn-agregar {
+    display: inline-block;
+    background: #9474c4;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn-agregar:hover {
+    background: #7957ac;
+    color: white;
+}
+
+/* Tabla */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabla-contenedor table {
+    margin: 0;
+    border-radius: 9px;
+    box-shadow: none;
+}
+
+.tabla-contenedor th {
+    background: #eee7f8;
+    color: #594080;
+}
+
+.tabla-contenedor td {
+    vertical-align: middle;
+}
+
+.tabla-contenedor tr:last-child td {
+    border-bottom: none;
+}
+
+/* Acciones */
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.acciones form {
+    display: inline;
+    margin: 0;
+}
+
+.btn-editar,
+.btn-eliminar {
+    display: inline-block;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background: #eee7f8;
+    color: #694b98;
+}
+
+.btn-editar:hover {
+    background: #ded2ed;
+    color: #594080;
+}
+
+.btn-eliminar {
+    background: #f9e5e9;
+    color: #b64c63;
+}
+
+.btn-eliminar:hover {
+    background: #f3d1d9;
+}
+
+/* Cuando no hay contactos */
+.sin-contactos {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.icono-vacio {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.sin-contactos h3 {
+    color: #594080;
+    margin-bottom: 10px;
+}
+
+.sin-contactos p {
+    margin-bottom: 20px;
+    color: #777184;
+}
+
+/* Pie de página */
+.pie {
+    text-align: center;
+    color: #9991a8;
+    font-size: 13px;
+    padding: 15px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 650px) {
+    .encabezado {
+        padding: 18px;
+    }
+
+    .encabezado h1 {
+        font-size: 20px;
+    }
+
+    .contenedor {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .tarjeta {
+        padding: 18px;
+    }
+
+    .bienvenida h2 {
+        font-size: 20px;
+    }
+
+    .icono-agenda {
+        font-size: 38px;
+    }
+
+    .titulo-contactos {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .acciones {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* =================================
+   DISEÑO DE FORMULARIOS
+================================= */
+
+/* Fondo y centrado de las páginas */
+body.pagina-formulario {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+    background: #f7f5fc;
+}
+
+/* Contenedor de la tarjeta */
+.formulario-contenedor {
+    width: 100%;
+    max-width: 460px;
+    margin: auto;
+}
+
+/* Tarjeta del formulario */
+.formulario-card {
+    width: 100%;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(80, 60, 120, 0.10);
+}
+
+/* Título */
+.formulario-card h1,
+.formulario-card h2 {
+    text-align: center;
+    color: #694b98;
+    margin-bottom: 12px;
+}
+
+/* Texto descriptivo */
+.formulario-card p {
+    text-align: center;
+    color: #777184;
+    margin-bottom: 22px;
+}
+
+/* Etiquetas */
+.formulario-card label {
+    display: block;
+    margin-bottom: 5px;
+    color: #594080;
+    font-size: 14px;
+}
+
+/* Campos de escritura cortos */
+.formulario-card input,
+.formulario-card textarea,
+.formulario-card select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 11px 12px;
+    margin: 0 0 18px;
+    border: 1px solid #d9cde9;
+    border-radius: 7px;
+    background: #fff;
+    font-size: 14px;
+}
+
+/* Efecto al seleccionar un campo */
+.formulario-card input:focus,
+.formulario-card textarea:focus,
+.formulario-card select:focus {
+    outline: none;
+    border-color: #9474c4;
+    box-shadow: 0 0 5px #d9c9ed;
+}
+
+/* Botón del formulario */
+.formulario-card button,
+.formulario-card input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #9474c4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.formulario-card button:hover,
+.formulario-card input[type="submit"]:hover {
+    background: #7957ac;
+}
+
+/* Enlaces inferiores */
+.formulario-enlace {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 500px) {
+    .formulario-card {
+        padding: 25px 20px;
+    }
+}
+
+
+/* Formulario del botón de cerrar sesión */
+.encabezado-contenido form {
+    margin: 0;
+}
+
+.btn-cerrar {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Buscador de contactos */
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.buscador input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px 15px;
+    border: 1px solid #d8c9ed;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.buscador input:focus {
+    border-color: #9874c5;
+    box-shadow: 0 0 0 3px rgba(152, 116, 197, 0.15);
+}
+
+.buscador button,
+.buscador a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .buscador {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buscador input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Estilos para el selector de ordenamiento */
+.buscador select {
+    padding: 12px 15px;
+    border: 1px solid #d8c9ed;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    outline: none;
+}
+
+.buscador select:focus {
+    border-color: #9874c5;
+    box-shadow: 0 0 0 3px rgba(152, 116, 197, 0.15);
+}
+
+@media (max-width: 600px) {
+    .buscador select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
